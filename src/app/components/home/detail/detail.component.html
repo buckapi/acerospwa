@@ -1,6 +1,6 @@
 <section>
     <div class="w-100 pt-170 pb-150 dark-layer3  position-relative">
-        <!-- <div class="fixed-bg" style="background-image: url(assets/aceros/images/pagetop-bg.jpg);"></div> -->
+        <div class="fixed-bg" style="background-image: url(assets/aceros/images/pagetop-bg.jpg);"></div>
         <div class="container">
             <div class="page-top-wrap w-100">
                 <h1 class="mb-0">Detalles de productos</h1>
@@ -47,7 +47,7 @@
                                 </div> -->
                                 <div class="price-stock d-flex flex-wrap justify-content-between align-items-center w-100">
                                     <span class="price"><ins>${{yeoman.preview.price}}</ins></span>
-                                    <span class="stock">Categoria:<span>{{yeoman.preview.category}}</span> <i></i></span>
+                                    <!-- <span class="stock">Categoria:<span>{{yeoman.preview.category}}</span> <i></i></span> -->
                                 </div>
                                 <p class="mb-0">{{yeoman.preview.description}}</p>
                                 <!-- <div class="detail-share w-100">
@@ -62,8 +62,18 @@
                                     <label for="quantity">Cantidad:</label>
                                     <input type="number" id="quantity" name="quantity" value="1" min="1">
                                 </div>
-                              <button class="orange-button">  <a (click)="setRoute('cars')" title="">Agregar al carro<i class="fas fa-shopping-basket"></i></a>
-                              </button>
+                                <div class="product__variant--list quantity d-flex align-items-center mb-20">
+                                       <div class="quantity__box">
+                                            <button type="button" class="quantity__value quickview__value--quantity decrease" aria-label="quantity value" value="Decrease Value"  (click)="minus()">-</button>
+                                            <label>
+                                                <input type="number" class="quantity__number quickview__value--number" [(ngModel)]="quantity"   [ngModelOptions]="{standalone: true}"/>
+                                            </label>
+                                            <button type="button" class="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value" (click)="plus()">+</button>
+                                        </div>
+                                       <button type="button" class="primary__btn quickview__cart--btn "  (click)="addToBag(quantity)"   data-dismiss="modal">Agregar al carro</button>   
+                                    </div>
+                              <!-- <button class="orange-button">  <a (click)="setRoute('cars')" title="">Agregar al carro<i class="fas fa-shopping-basket"></i></a>
+                              </button> -->
                             </div>
                         </div>
                     </div>
