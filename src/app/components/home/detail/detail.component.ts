@@ -59,7 +59,7 @@ public calculate(){
        this.tixToAdd.onCar=true;
      if(this.yeoman.numProd>=3){
        this.tixToAdd.onCar=false;
-this.yeoman.hidden=true;
+    this.yeoman.hidden=true;
      }
        this.tixToAdd.quantity=quantity;
        this.tixToAdd.name=this.yeoman.preview.name;

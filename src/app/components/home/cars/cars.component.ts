@@ -15,6 +15,7 @@ export class CarsComponent implements OnInit {
     setRoute(par:any){
       let parametro=par;
     this.yeoman.virtualRoute=parametro;
+    this.setRoute('checkout');
     }
       view(id:any){
      let preview=this.yeoman.products[id];

@@ -1,6 +1,7 @@
-<section>
+
+<!-- <section>
     <div class="w-100 pt-170 pb-150 dark-layer3 opc7 position-relative">
-        <div class="fixed-bg" style="background-image: url(assets/aceros/images/pagetop-bg.jpg);"></div>
+        <div class="fixed-bg" style="background-image: url(assets/aceros/aceros/images/pagetop-bg.jpg);"></div>
         <div class="container">
             <div class="page-top-wrap w-100">
                 <h1 class="mb-0">Cart Page</h1>
@@ -9,26 +10,27 @@
                     <li class="breadcrumb-item"><a  title="">Shop</a></li>
                     <li class="breadcrumb-item active">Cart</li>
                 </ol>
-            </div><!-- Page Top Wrap -->
+            </div>
         </div>
     </div>
-</section>
+</section> -->
 <section>
     <div class="w-100 pt-100 pb-100 position-relative">
         <div class="container">
             <div class="cart-table w-100">
-
                 <form class="cart-form">
-       <!--             <table class="product-table">
+                    <!-- <table class="product-table">
                         <thead>
                             <tr>
-                                <th>Product</th>
-                                <th>Description</th>
-                                <th>Model</th>
-                                <th>Edit</th>
-                                <th>Quantity</th>
-                                <th>Unit Price</th>
+                                <th>Producto</th>
+                                <th>Descripcion</th>
+                                <th>Cantidad</th>
+                                <th>Precio unitario</th>
                                 <th>Total</th>
+
+                                <th></th>
+                                
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -75,15 +77,14 @@
                                 <td class="product-total"><span>$999.00</span></td>
                             </tr>
                         </tbody>
-                    </table> -->
-
+                    </table>    -->
                     <div class="cart-table-bottom-btns d-flex flex-wrap justify-content-between align-items-center">
-                        <a class="simple-btn bg-color1" href="javascript:void(0);" title="">Continue Shopping</a>
-                        <a class="simple-btn bg-color1" href="javascript:void(0);" title="">Update Shopping Cart</a>
+                        <a class="simple-btn bg-color1" href="javascript:void(0);" title="">Continuar en la tienda</a>
+                        <!-- <a class="simple-btn bg-color1" href="javascript:void(0);" title="">Procesar compra</a> -->
                     </div>
                     <div class="cart-data w-100">
                         <div class="row">
-                            <div class="col-6 col-md-6 col-lg-8">
+                            <!-- <div class="col-md-4 col-sm-6 col-lg-4">
                                 <div class="cart-data-box w-100">
                                     <h3 class="mb-0">Estimate Shopping And Tax</h3>
                                     <div class="field-box w-100">
@@ -116,7 +117,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-6 col-lg-8">
+                            <div class="col-md-4 col-sm-6 col-lg-4">
                                 <div class="cart-data-box w-100">
                                     <h3 class="mb-0">Discount Code</h3>
                                     <div class="field-box w-100">
@@ -127,20 +128,20 @@
                                         <button class="simple-btn bg-color1" type="submit">Apply</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-8">
+                            </div> -->
+                            <div class="col-md-12 col-sm-6 col-lg-12" >
                                 <div class="cart-data-box cart-total w-100">
-                                    <span class="d-block">Subtotal: <span class="price">$999.00</span></span>
-                                    <span class="d-block">Grand Total: <span class="price">$999.00</span></span>
+                                    <span class="d-block">Total: <span class="price">$999.00</span></span>
+                                    <!-- <span class="d-block">Grand Total: <span class="price">$999.00</span></span> -->
                                     <div class="field-btn">
-                                        <button class="simple-btn checkout-btn bg-color1" type="submit" >Proceed To Checkout</button>
+                                        <button class="simple-btn checkout-btn bg-color1" type="submit" (click)="setRoute('checkout')">Procesar compra</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- Cart Data -->
                 </form><!-- Cart Form -->
-            </div>
+            </div><!-- Cart Table -->
         </div>
     </div>
 </section>

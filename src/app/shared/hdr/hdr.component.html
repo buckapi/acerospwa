@@ -1,4 +1,4 @@
-<div class="rspn-hdr">
+<div class="rspn-hdr" [hidden]="yeoman.virtualRoute === 'cars'">
     <div class="rspn-mdbr">
         <!-- <div class="rspn-scil">
             <a href="https://web.facebook.com/aceroymas.com.mx?_rdc=1&_rdr" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -21,7 +21,7 @@
         
     </div>
     
-    <div class="rsnp-mnu">
+    <div class="rsnp-mnu" [hidden]="yeoman.virtualRoute === 'cars'">
         <span class="rspn-mnu-cls"><i class="fa fa-times"></i></span>
         <ul class="mb-0 list-unstyled w-100">
                        

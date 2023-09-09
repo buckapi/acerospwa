@@ -1,5 +1,5 @@
 <header class="stick style2 w-100">
-    <div class="topbar bg-color5 w-100">
+    <div class="topbar bg-color5 w-100" [hidden]="yeoman.virtualRoute === 'cars'">
         <div class="container">
             <div class="topbar-inner d-flex flex-wrap justify-content-between align-items-center w-100">
                 <ul class="topbar-info-list mb-0 list-unstyled d-inline-flex">
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div><!-- Topbar -->
-    <div class="logo-info-bar-wrap w-100">
+    <div class="logo-info-bar-wrap w-100" [hidden]="yeoman.virtualRoute === 'cars'">
         <div class="container">
             <div class="logo-info-bar-inner w-100 d-flex flex-wrap justify-content-between align-items-center">
                 <div class="logo-social d-inline-flex flex-wrap justify-content-between align-items-center">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div><!-- Logo Info Bar Wrap -->
-    <div class="menu-wrap" [hidden]="yeoman.virtualRoute === 'shop' || yeoman.virtualRoute === 'detail'" >
+    <div class="menu-wrap" [hidden]="yeoman.virtualRoute === 'shop' || yeoman.virtualRoute === 'detail' || yeoman.virtualRoute === 'cars'" >
         <div class="container">
             <nav class="d-inline-flex justify-content-between align-items-center w-100">
                 <div class="header-left">
@@ -49,16 +49,13 @@
                        
                         <li><a (click)="setRoute('first')" style="cursor: pointer;" title="">Inicio</a></li>
                         <li><a (click)="setRoute('about')" style="cursor: pointer;" title="">Nosotros</a></li>
-                        <li><a (click)="setRoute('shop')" style="cursor: pointer;"itle="">Tienda
-                            </a>
-                        </li>
+                        <li><a (click)="setRoute('shop')" style="cursor: pointer;"itle="">Tienda</a></li>
                         <li><a (click)="setRoute('contact')" style="cursor: pointer;" title="">Contacto</a></li>
                     </ul>
                     
                 </div>
                 
                 <div class="header-right-btns">
-                    <!-- <a class="get-quote" href="https://wa.me/+5218117788170?text=Hola!!%20Quiero%20comprar%20en%20Acero%20y%20más" title=""><i class="fab fa-whatsapp" style="    font-size: 30px;"></i>Atención personalizada<i class="flaticon-arrow-pointing-to-right"></i></a> -->
                     <a class="get-quote" href="https://wa.me/+5218117788170?text=Hola!!%20Quiero%20comprar%20en%20Acero%20y%20más" title="">Atención personalizada<i class="fab fa-whatsapp" style="font-size:20px;"></i></a> 
 
                 </div>
