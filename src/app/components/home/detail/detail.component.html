@@ -58,11 +58,8 @@
                                     <a class="skype-clr" href="javascript:void(0);" title="Skype" target="_blank"><i class="fab fa-skype"></i></a>
                                     <a class="rss-clr" href="javascript:void(0);" title="Rss" target="_blank"><i class="fas fa-rss"></i></a>
                                 </div> -->
-                                <div class="quantity-selector">
-                                    <label for="quantity">Cantidad:</label>
-                                    <input type="number" id="quantity" name="quantity" value="1" min="1">
-                                </div>
-                                <div class="product__variant--list quantity d-flex align-items-center mb-20">
+                               
+                                <div class=" quantity d-flex align-items-center mb-20">
                                        <div class="quantity__box">
                                             <button type="button" class="quantity__value quickview__value--quantity decrease" aria-label="quantity value" value="Decrease Value"  (click)="minus()">-</button>
                                             <label>
@@ -70,10 +67,9 @@
                                             </label>
                                             <button type="button" class="quantity__value quickview__value--quantity increase" aria-label="quantity value" value="Increase Value" (click)="plus()">+</button>
                                         </div>
-                                       <button type="button" class="primary__btn quickview__cart--btn "  (click)="addToBag(quantity)"   data-dismiss="modal">Agregar al carro</button>   
-                                    </div>
-                              <!-- <button class="orange-button">  <a (click)="setRoute('cars')" title="">Agregar al carro<i class="fas fa-shopping-basket"></i></a>
-                              </button> -->
+                                    <button class="orange-button" (click)="addToBag(quantity)">  Agregar al carro<i class="fas fa-shopping-basket"></i> </button>
+                                </div>
+                             
                             </div>
                         </div>
                     </div>
@@ -206,25 +202,3 @@
         </div>
     </div>
 </section> -->
-<section>
-    <div class="w-100 position-relative">
-        <div class="container">
-            <div class="getin-touch-wrap overlap-99 brd-rd5 style2 thm-layer opc8 w-100 overflow-hidden position-relative">
-                <div class="fixed-bg" style="background-image: url(assets/aceros/images/parallax2.jpg);"></div>
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md-7 col-sm-12 col-lg-5">
-                        <div class="getin-touch-title w-100">
-                            <span class="text-color1 d-block">¿Tienes un Proyecto?</span>
-                            <h2 class="mb-0"> Comunicate con Nosotros</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12 col-lg-4">
-                        <div class="getin-touch-btn text-right">
-                            <a class="thm-btn bg-color1" (click)="setRoute('contact')" title="">Escribenos<i class="flaticon-arrow-pointing-to-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
